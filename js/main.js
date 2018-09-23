@@ -11,7 +11,7 @@ $(document).ready(function () {
         correctCounter: 0,
         displayWord: [],
         wrongLetters: [],
-        guesses: 10,
+        guesses: 7,
         wins: 0,
         losses: 0,
 
@@ -34,7 +34,7 @@ $(document).ready(function () {
             $("#wins").text(this.wins);
             $("#losses").text(this.losses);
             $("#guesses-left").text(this.guesses);
-            this.guesses = 10;
+            this.guesses = 7;
             $("#wrong-letters").text(this.wrongLetters.join(" "))
             $("#check").text(this.check);
             $(".bird-image").attr("src", this.imageSources[randomNum])
