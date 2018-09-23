@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HangMan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Rye" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="./styles/css/main.css" />
+</head>
+
+<body>
+
+    <div class="overlay">
+
+    </div>
+
+    <div class="modal-1">
+        <h2 id="modal-header">You Win</h2>
+        <p id="modal-info">The answer was:</p>
+        <span id="modal-answer"></span>
+        <img class="modal-image" src="./styles/images/Blondie.gif" alt="">
+    </div>
+
+    <header>
+        <h1>Hangman</h1>
+        <p class="kicker">Bird Style</p>
+
+        <div class="win-loss">
+            <span>Wins: <span id="wins"></span></span>
+            <span>Losses: <span id="losses"></span></span>
+        </div>
+    </header>
+
+    <section>
+        <div class="left">
+            <div class="first">
+                <p>Guesses Left</p>
+                <div id="guesses-left"></div>
+                <p>Letters Guessed</p>
+                <div id="wrong-letters"></div>
+            </div>
+            <div class="second">
+                <img src="" alt="" class="bird-image">
+            </div>
+
+        </div>
+        <div class="right">
+            <h3>Current Word</h3>
+            <p id="current-word"></p>
+            <p id="check"></p>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

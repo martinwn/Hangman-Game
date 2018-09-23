@@ -1,0 +1,81 @@
+section
+    display: flex
+    flex: 1
+
+    .left
+        display: flex
+        flex-direction: column
+        flex: 1
+        text-align: center
+        border-right: solid 1px rgba(0,0,0,0.7)
+
+        .first
+            flex: 1
+
+            p
+                color: rgba(0,0,0,0.7)
+                font:
+                    size: 1.2rem
+                margin: 10px 0
+
+            div
+                font:
+                    size: 1.3rem
+                    weight: 600
+            
+        .second
+            flex: 1
+
+            .bird-image
+                height: 200px
+                width: 200px
+                border-radius: 30%
+                box-shadow: 0 0 10px rgba(0,0,0,0.7)
+
+
+    .right
+        flex: 2
+        text-align: center
+
+        h3
+            font:
+                size: 1.5rem
+
+        #current-word
+            font: 
+                size: 2rem
+            text-transform: uppercase
+
+        #check
+            font:
+                size: 1.5rem
+            display: inline-block
+            margin: 0 10px
+
+        #check.wrong
+            animation: wrong 200ms linear 1 normal forwards
+        
+        #check.right
+            animation: right 200ms linear 1 normal forwards
+
+            
+@keyframes wrong 
+    0%
+        color: black
+    50%
+        color: red
+        transform: scale(1.2)
+    100%
+        color: red
+        transform: scale(1)
+
+@keyframes right
+    0%
+        color: black
+    50%
+        color: green
+        transform: scale(1.2)
+    100%
+        color: green
+        transform: scale(1)
+

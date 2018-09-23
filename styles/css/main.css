@@ -1,0 +1,181 @@
+.overlay {
+  display: none;
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
+.modal-1 {
+  display: none;
+  background: #fff;
+  height: 70vh;
+  width: 31vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border: dotted 1px black;
+  text-align: center; }
+  .modal-1 span {
+    display: inline-block;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-transform: uppercase; }
+  .modal-1 img {
+    display: block;
+    margin: 0 auto;
+    height: 50%;
+    width: 80%;
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    border-radius: 50%; }
+
+header {
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+  text-align: center; }
+  header h1 {
+    font-size: 3rem;
+    margin: 0;
+    letter-spacing: 0.07em; }
+  header .kicker {
+    font-size: 2rem;
+    margin: 10px 0; }
+  header .win-loss {
+    text-align: right;
+    margin: 25px 40px; }
+    header .win-loss #wins, header .win-loss #losses {
+      text-align: center;
+      display: inline-block;
+      width: 40px;
+      font-weight: 600; }
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+  section .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: center;
+    border-right: solid 1px rgba(0, 0, 0, 0.7); }
+    section .left .first {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1; }
+      section .left .first p {
+        color: rgba(0, 0, 0, 0.7);
+        font-size: 1.2rem;
+        margin: 10px 0; }
+      section .left .first div {
+        font-size: 1.3rem;
+        font-weight: 600; }
+    section .left .second {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1; }
+      section .left .second .bird-image {
+        height: 200px;
+        width: 200px;
+        border-radius: 30%;
+        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); }
+  section .right {
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    text-align: center; }
+    section .right h3 {
+      font-size: 1.5rem; }
+    section .right #current-word {
+      font-size: 2rem;
+      text-transform: uppercase; }
+    section .right #check {
+      font-size: 1.5rem;
+      display: inline-block;
+      margin: 0 10px; }
+    section .right #check.wrong {
+      -webkit-animation: wrong 200ms linear 1 normal forwards;
+      animation: wrong 200ms linear 1 normal forwards; }
+    section .right #check.right {
+      -webkit-animation: right 200ms linear 1 normal forwards;
+      animation: right 200ms linear 1 normal forwards; }
+
+@-webkit-keyframes wrong {
+  0% {
+    color: black; }
+  50% {
+    color: red;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); }
+  100% {
+    color: red;
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes wrong {
+  0% {
+    color: black; }
+  50% {
+    color: red;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); }
+  100% {
+    color: red;
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@-webkit-keyframes right {
+  0% {
+    color: black; }
+  50% {
+    color: green;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); }
+  100% {
+    color: green;
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes right {
+  0% {
+    color: black; }
+  50% {
+    color: green;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); }
+  100% {
+    color: green;
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+html {
+  height: 100vh;
+  font-family: 'Rye', cursive;
+  font-size: 18px; }
+
+body {
+  margin: 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
