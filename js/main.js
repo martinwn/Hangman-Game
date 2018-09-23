@@ -19,7 +19,6 @@ $(document).ready(function () {
             let randomNum = Math.floor(Math.random() * this.words.length);
             this.chosenWord = this.words[randomNum];
             this.correctCounter = this.chosenWord.length;
-            console.log(this.chosenWord)
             return randomNum;
         },
 
